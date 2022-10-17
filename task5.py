@@ -25,7 +25,7 @@ if all_list == 'Ошибка':
     print('Неверный ввод, введите целое положительное число больше единицы')
 else:
     fract_list = [round(i % 1, 2) for i in all_list if i % 1 != 0]
-    print(f'{all_list}, {round(max(fract_list) - min(fract_list), 2)}')
+    print(f'{all_list}, max {max(fract_list)}, min {min(fract_list)}, Difference {round(max(fract_list) - min(fract_list), 2)}')
 
 
 
