@@ -25,8 +25,6 @@ else:
     print(f'{all_list}, max {max(fract_list)}, min {min(fract_list)}, Difference {round(max(fract_list) - min(fract_list), 2)}')
 
 
-
-
 # from random import uniform
 
 

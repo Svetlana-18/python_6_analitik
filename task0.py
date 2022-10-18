@@ -4,6 +4,11 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
+
+numbers = str(input("Введите вещественное число: ")).replace('.', '')
+print(sum(list(map(int, numbers))))
+
+
 # number = float(input("Введите вещественное число: "))
 # numberLengt = len(str(number)) - 2
 # number = int(number * 10 ** numberLengt)
@@ -14,7 +19,3 @@
 #     sum_digits += (number % 10)
 #     number = number // 10
 # print("сумма цифр равна:", sum_digits)
-
-
-numbers = str(input("Введите вещественное число: ")).replace('.', '')
-print(sum(list(map(int,numbers))))
