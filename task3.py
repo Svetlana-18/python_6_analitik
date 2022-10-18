@@ -25,9 +25,6 @@ else:
     print(f'{all_list}, max {max(fract_list)}, min {min(fract_list)}, Difference {round(max(fract_list) - min(fract_list), 2)}')
 
 
-# input_list = list(map(lambda x: float(x), input('Ввведите числа  ').split()))
-# fract_list = [round(i % 2, 2) for i in input_list if i % 1 != 0]
-# print(f'{input_list}, {max(fract_list) - min(fract_list)}')
 
 
 # from random import uniform
