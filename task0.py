@@ -1,13 +1,20 @@
-# 2. Напишите программу для. проверки истинности утверждения
-# ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
+# 1.Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
+# Пример:
 
-print()
-print('утверждение  ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z истинно при')
-print('x y z')
-for x in range(2):
-    for y in range(2):
-        for z in range(2):
-            if not (x or y or z) == (not x and not y and not z):
-                print(x, y, z)
+# - 6782 -> 23
+# - 0,56 -> 11
+
+# number = float(input("Введите вещественное число: "))
+# numberLengt = len(str(number)) - 2
+# number = int(number * 10 ** numberLengt)
+# if number < 0:
+#     number = number * - 1
+# sum_digits = 0
+# while (number != 0):
+#     sum_digits += (number % 10)
+#     number = number // 10
+# print("сумма цифр равна:", sum_digits)
 
 
+numbers = str(input("Введите вещественное число: ")).replace('.', '')
+print(sum(list(map(int,numbers))))

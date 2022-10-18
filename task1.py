@@ -1,20 +1,25 @@
-# 1.Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
-# Пример:
+# 3. Задайте список из n чисел, заполненный по формуле (1 + 1/n) ** n и выведите на экран их сумму.
+# Для n = 6: [2, 2, 2, 2, 2, 3] -> 13
 
-# - 6782 -> 23
-# - 0,56 -> 11
+# numberslist = []
+# result = 0
+# count = int(input('Введите число N: '))
+# if count <= 0:
+#     print('Неверный ввод, введите целое положительное число')
+# else:
+#     for i in range(1, count + 1):
+#         numbers = (round((1 + 1/i) ** i))
+#         numberslist.append(numbers)
+#         result += numbers
+#     print(numberslist)
+#     print(result)
 
-# number = float(input("Введите вещественное число: "))
-# numberLengt = len(str(number)) - 2
-# number = int(number * 10 ** numberLengt)
-# if number < 0:
-#     number = number * - 1
-# sum_digits = 0
-# while (number != 0):
-#     sum_digits += (number % 10)
-#     number = number // 10
-# print("сумма цифр равна:", sum_digits)
 
-
-numbers = str(input("Введите вещественное число: ")).replace('.', '')
-print(sum(list(map(int,numbers))))
+count = int(input('Введите число N: '))
+if count <= 0:
+    print('Неверный ввод, введите целое положительное число')
+else:
+    numberslist = [round(((1+1/i)**i), 2) for i in range(1, count + 1)]
+    result = sum(numberslist)
+    print(numberslist)
+    print(result)
