@@ -15,6 +15,6 @@
 #     number = number // 10
 # print("сумма цифр равна:", sum_digits)
 
-number = input("Введите вещественное число: ")
-sum1=sum([int(i) for i in number if number.isdigit()])
-print(sum1)
+
+numbers = str(input("Введите вещественное число: ")).replace('.', '')
+print(sum(list(map(int,numbers))))

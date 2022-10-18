@@ -11,7 +11,3 @@ for x in range(2):
                 print(x, y, z)
 
 
-# def f(x,y,z):
-#     return [ x for x in range(2) y for y in range(2) for z in range(2) if not (x or y or z) == (not x and not y and not z)]
-# # list = [x for x in range(2) y for y in range(2) for z in range(2) if not (x or y or z) == (not x and not y and not z)]  
-# print (x, y, z)
