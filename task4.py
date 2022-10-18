@@ -34,7 +34,6 @@
 #     print(res)
 
 
-# num = int(input('Введите десятичное число  '))
-# print (bin(num)[2:])
+num = int(input('Введите десятичное число  '))
+print (bin(num)[2:])
 
-# conv_bin(int(input()))
